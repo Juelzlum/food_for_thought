@@ -8,7 +8,7 @@ const food = {
   }
 
   
-  router.get('/', (req,res) => {
+  router.get('', (req,res) => {
     const arr = Object.values(food)
     res.json(arr)
   })
