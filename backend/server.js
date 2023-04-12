@@ -6,16 +6,11 @@ const PORT = 8000
 
 app.use(express.json())
 
-//database 
 
-const food = {
-item1 : 'chinese ', 
-item2 : 'korean'
-}
+const foodRouter = require('./routes/food')
 
 
-
-
+app.use('/api/food', foodRouter)
 
 app.get('/', (req,res)=> {
 res.send ("Hello")
