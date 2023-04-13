@@ -4,7 +4,8 @@ const router = express.Router();
 
 const food = {
   item1 : 'chinese', 
-  item2 : 'korean'
+  item2 : 'korean',
+  item3 : 'italian'
   }
 
   
